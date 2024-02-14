@@ -12,9 +12,15 @@ jobs:
     steps: 
        # - run: dotnet --version
         - run: node --version
+          name: Check Node Version
         - run: npm --version
+          name: Check NPM Version
         - uses: actions/checkout@v4
+          name: Checkout Code from Repo
         - run: dir
+          name: List root dir contents
         - run: npm install
+          name: Install NPM packages
         - run: node app.js
+          name: Run App
 
