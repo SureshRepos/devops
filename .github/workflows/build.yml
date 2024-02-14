@@ -1,9 +1,11 @@
+name: Node Continuous Integration
 on: push
   #- branch: main
     
 
 jobs: 
-  first-job: 
+  first-job:
+    name: Build Node
    # runs-on: windows-latest
     runs-on: ubuntu-latest
     container: node:17.6.0
